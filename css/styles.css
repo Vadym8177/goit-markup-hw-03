@@ -29,28 +29,29 @@ ul {
  .page {
      background-color: var(--primary-bg-color);
      color: var(--title-text-color);
-    
      font-family: Roboto, sans-serif;
      letter-spacing: 0.03em;
  }
  /* шапка */
 
  .container {
-     width: 1170px; 
-     padding-left: 15px;
-     padding-right: 15px;
+     width: 1200px; 
      margin-left: auto;
      margin-right: auto;
  }
 
-
+.page-nav {
+    display: flex;
+    /* align-items: center; */
+}
  /* навигация сайта */
   .logo {
-    display: inline-block;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    /* display: block; */
+    /* padding-top: 24px;
+    padding-bottom: 25px; */
     
-    
+
+
     font-family: Raleway, cursive;
     font-weight: 700;
     font-size: 26px;
@@ -65,9 +66,20 @@ ul {
      color: var(--third-text-color);
  }
 
+.site-nav {
+    display: flex;
+}
+
+.site-nav .item + .item {
+    margin-left: 50px;
+}
+ 
 .site-nav .link {
-    color: var(--primary-text-color);
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     
+    color: var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -84,9 +96,18 @@ ul {
 .site-nav .link.current-second {
     color: var(--accent-color);
 }
+.contacts-nav {
+    display: flex;
+}
+.contacts-nav .item + .item {
+    margin-left: 50px;
+}
 .contacts-nav .link {
-    color: var(--title-text-color);
+    /* display: block;
+    padding-bottom: 32px;
+    padding-top: 32px; */
     
+    color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -111,7 +132,6 @@ ul {
 
     
     color: var(--secondary-text-color);
-    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -135,7 +155,6 @@ ul {
     margin-bottom: 10px;
     
     color: var(--primary-text-color);
-    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -154,7 +173,6 @@ ul {
     margin-bottom: 50px;
     
     color: var(--primary-text-color);
-    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
