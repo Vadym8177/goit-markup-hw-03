@@ -28,7 +28,7 @@ ul {
 
 img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -134,20 +134,18 @@ img {
 .hero {
     padding-bottom: 200px;
     padding-top: 200px;
+    text-align: center;
     
 
     background-color: var(--secondary-bg-color);
 }
 
-.hero .container {
-    text-align: center;
-    width: 696px;
-    
-}
+
 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
+    width: 696px;
+    
    
    
     
@@ -169,7 +167,7 @@ img {
 
 }
 .section-features .list {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
     display: flex;
     justify-content: space-between;
 }
@@ -177,17 +175,17 @@ img {
 .section-list {
     display: flex;
     margin-bottom: 0;
-    margin-top: 94px;
 }
 
-.section-list .item {
-    width: 270px;
-
-}
 
 .section-work {
-    padding-bottom: 94px;
     
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+}
+.section-work .item {
+    width: 270px;
 }
 .section-work .section-list{
     justify-content: space-between;
@@ -251,6 +249,7 @@ img {
     text-align: center;
 }
 .section-team .item {
+    width: 270px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -309,7 +308,7 @@ img {
 }
 .footer .link {
     display: block;
-    margin-bottom: 9px;
+    
     
     
     
@@ -320,18 +319,23 @@ img {
     text-decoration: none;
 }
 
+.footer li {
+    margin-bottom: 9px;
+}
+.footer li:last-child {
+    margin-bottom: 0;
+}
+
 .footer .link.contacts {
     display: block;
-    margin-bottom: 9px;
     
     
-    
-    color: rgba(255, 255, 255, 0.6);
-    
+    color: rgba(255, 255, 255, 0.6);  
 }
+
 .footer .link.contacts.tel {
     display: block;
-    margin-bottom: 0;
+    
     
     
     color: rgba(255, 255, 255, 0.6);
@@ -347,10 +351,11 @@ img {
     color: var(--accent-color);
     
 }
+
 /* портфолио */
 
 .page-header-portfolio {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .section-portfolio {
@@ -402,6 +407,7 @@ img {
 
 
 .section-portfolio .title {
+    
     color: var(--primary-text-color);
     
     font-weight: 700;
@@ -440,4 +446,8 @@ img {
 
 .section-portfolio .info {
     margin-bottom: 30px;
+}
+
+.section-portfolio .title {
+    margin-bottom: 4px;
 }
